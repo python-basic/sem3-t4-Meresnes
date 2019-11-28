@@ -1,3 +1,4 @@
+import math
 def discr(a=0, b=0, c=0, accuracy=0.00001):
     """
         Дискриминант
@@ -14,20 +15,27 @@ def discr(a=0, b=0, c=0, accuracy=0.00001):
     return float(res)
 
 def solve_eq(a, b, c, accuracy=0.00001):
-    """
-        Решение квадратного уравнения с помощью дискриминанта
-        
-        TODO: Дополнить докстрингом, описать входные и выходные значения. 
-    """
+
     x1, x2 = None, None
     
-    return (x1, x2)
+    d = discr(a,b,c,accuracy)
+
+    if d < 0:
+        return (x1, x2)
+
+    if d > 0:    
+        d = float(math.sqrt(d))
+        x1 = float((-b + d)/(2*a))
+        x2 = float((-b - d)/(2*a))
+        return (x1, x2)
+    
+        
 
 
 assert solve_eq(1,2,3) == (None, None),  "Значение по умолчанию для заглушки функции"
 
 # 1 test case = тестовый случай 
-discr(1)  # 0 
+discr(1)  # 0
 
 # 2 
 discr(1, c=1/4) # -1.0 
