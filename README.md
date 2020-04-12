@@ -14,3 +14,4 @@
 #### [Вариативная](https://github.com/python-basic/sem3-t4-Meresnes/tree/master/Section_6/variat)
 #### [Инвариативная](https://github.com/python-basic/sem3-t4-Meresnes/tree/master/Section_6/invar)
 ### [Лабораторная работа 10](https://github.com/python-basic/sem3-t4-Meresnes/blob/master/Laba%2010.py)
+### [Лабораторнвя работа 11](https://github.com/python-basic/sem3-t4-Meresnes/tree/master/Laba_11)
